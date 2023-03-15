@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
 }
 
 android {
@@ -42,7 +43,10 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.0'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
     implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+
     implementation "androidx.room:room-runtime:2.5.0"
     implementation "androidx.room:room-ktx:2.5.0"
     kapt "androidx.room:room-compiler:2.5.0"
@@ -50,6 +54,22 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
 
+    //sdp
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    //ssp
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+
+ //   implementation 'androidx.activity:activity-ktx:1.6.1'
+    implementation 'io.github.chaosleung:pinview:1.4.4'
+
+    //lottie for animation
+    implementation 'com.airbnb.android:lottie:4.2.2'
+
+    // Easy Permission
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+    //imagePicker
+ //   implementation "com.github.dhaval2404:imagepicker:2.1"
 
     // Dependencies for local unit tests
     testImplementation "junit:junit:4.13.2"
@@ -91,25 +111,11 @@ dependencies {
     implementation "androidx.test.espresso:espresso-idling-resource:3.5.1"
 
     // Resolve conflicts between main and test APK:
-    androidTestImplementation "androidx.annotation:annotation:1.5.0"
+//    androidTestImplementation "androidx.annotation:annotation:1.5.0"
     androidTestImplementation "androidx.legacy:legacy-support-v4:1.0.0"
-    androidTestImplementation "androidx.recyclerview:recyclerview:1.2.1"
+//    androidTestImplementation "androidx.recyclerview:recyclerview:1.2.1"
     androidTestImplementation "androidx.appcompat:appcompat:1.6.0"
     androidTestImplementation "com.google.android.material:material:1.7.0"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
